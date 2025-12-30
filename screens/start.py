@@ -2,7 +2,7 @@ from config.base import Base
 from .select_camp import SelectCamp
 import pygame
 
-class Game(Base):
+class Start(Base):
     @classmethod
     def start(cls):
         Base.display = pygame.display.set_mode((cls.x, cls.y))

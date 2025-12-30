@@ -1,6 +1,7 @@
 import pygame
 
 from config.base import Base
+from screens.game import Game
 
 class SelectCamp(Base):
     options = ['C','D','E','F','G','A','B']
@@ -36,4 +37,4 @@ class SelectCamp(Base):
                     elif event.key == pygame.K_RIGHT:
                         cls.selected = (cls.selected + 1) % len(cls.options)
                     elif event.key == pygame.K_RETURN:
-                        print(f'Selecionado {cls.options[cls.selected]}')
+                        Game.start(cls.options[cls.selected])

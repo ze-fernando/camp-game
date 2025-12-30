@@ -1,4 +1,4 @@
-from screens.start import Game
+from screens.start import Start
 
 if __name__ == '__main__':
-    Game.start()
+    Start.start()
